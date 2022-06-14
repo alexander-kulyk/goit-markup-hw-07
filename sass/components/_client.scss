@@ -1,0 +1,38 @@
+.client{
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &__logo{
+        width: calc((100% - 150px)/6);
+    }
+
+    &__link{
+        height: 92px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        color: $social-icon-color;
+        border: 1px solid $social-icon-color;
+        border-radius: 4px;
+        
+        transition: color 250ms $cubic-beziez,
+        border 250ms $cubic-beziez;
+    }
+    &__link:hover, &__link:focus{
+        color: $accent-color;
+        border: 1px solid $accent-color;
+    }
+
+    &__icon{
+        fill: currentColor;
+    }
+}
