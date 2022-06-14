@@ -1,0 +1,58 @@
+.specifics{
+
+    &__tittle{
+        display: none;
+    }
+    
+    &__tittle-h3{
+        margin-top: 0;
+        margin-bottom: 10px;
+        
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-decoration: none;
+
+    }
+    &__text{
+        margin-top: 0;
+        margin-bottom: 0;
+        
+        color: $second-text-color;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+
+    }
+    &__list{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        display: flex;
+        list-style-type: none;
+    }
+    &__list &__item {
+        width: calc((100% - 90px)/4);
+        margin-right: 30px;
+    }
+    &__list &__item:nth-child(4n){
+        margin-right: 0;
+    }
+    
+    &__icon{
+        height: 120px;
+        margin-bottom: 30px;
+        background-color:  $portfolio-button-color;
+        border-radius: 4px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center
+
+    }
+    &__svg{
+
+    }
+}
