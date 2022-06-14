@@ -1026,4 +1026,67 @@ body {
 .client__icon {
   fill: currentColor;
 }
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 0;
+  height: 252px;
+  background-color: #2F303A;
+}
+
+.footer__logo {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer__logo:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.footer__contact-conten {
+  margin-left: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.footer__address {
+  margin-top: 20px;
+}
+
+.footer__contact-street {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.footer__contact-item {
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.footer__contact-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__contact-link:hover, .footer__contact-link:focus {
+  color: #2196F3;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */
