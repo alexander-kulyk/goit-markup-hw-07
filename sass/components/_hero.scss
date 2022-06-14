@@ -1,0 +1,262 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    background-color: $hero-background-color;
+
+    &__tittle{
+        min-width: 696px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-right: 0;
+        margin-left: 0;
+        
+        color: $h1-color;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    &__button{
+        padding: 10px 32px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        
+        color: $hero-button-color;
+        background-color: $hero-back-color;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        
+        transition: background-color 250ms $cubic-beziez;
+    }
+    
+    &__button:focus, &__button:hover{
+        background-color: $hero-accent-color;
+    }
+
+    &__overlay{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1600px;
+        max-height: 600px;
+        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+//---------------Модальне вікно---------------
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 1;
+
+    transition: opacity 250ms $cubic-beziez;
+
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop.is-hidden .modal-hero {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: $body-background-color;
+    border-radius: 4px;
+    
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $cubic-beziez;
+
+    &__button--close{
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        background-image: url(../images/close-black.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        border: 1px solid $border-color;
+        background-color: $body-background-color;
+        width: 30px;
+        height: 30px;
+        
+        border-radius: 50%;
+    }
+    &__button--close:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2)
+    }
+}
+.form-modal{
+    width: 528px;
+    padding: 40px;
+
+    &__tittle{
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    &__field{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        
+        color: $second-text-color;
+    }
+    &__label{
+        margin-bottom: 4px;
+    }
+    &__input{
+        height: 40px;
+        padding-left: 42px;
+        
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        outline: none;
+
+        transition: border 250ms $cubic-beziez;
+    }
+    &__input:focus{
+        border: 1px solid $accent-color;
+        cursor: pointer;
+    }
+
+    &__icon{
+        color: $primary-text-color;
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transition: color 250ms $cubic-beziez;
+    }
+    &__svg{
+        fill: currentColor;
+    }
+    &__input:focus ~ &__icon{
+        color: $accent-color;
+    }
+}
+.form-comment {
+    &__lable {
+
+    }
+    &__textarea{
+        padding-left: 16px;
+        padding-top: 12px;
+        outline: none;
+
+        transition: border 250ms $cubic-beziez;
+    }
+    &__textarea:focus{
+        border: 1px solid $accent-color;
+        cursor: pointer;
+    }
+    &__textarea::placeholder{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+.form-policy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+
+    &__checkbox{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+        }
+    &__checkbox:checked + &__icon{
+        background-color: $accent-color;
+        border: $accent-color;
+        background-image: url(../images/icon-check.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: content-box;
+    }
+    &__checkbox:focus + &__icon{
+        border: 2px solid $accent-color;
+    }
+
+    &__icon{
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid $primary-text-color;
+        border-radius: 2px;
+        margin-right: 8px;
+    }
+    &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        color: $accent-color;
+    }
+    &__link:hover, &__link:focus{
+        text-decoration: none;
+    }
+}

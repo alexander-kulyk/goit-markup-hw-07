@@ -1,0 +1,113 @@
+//------------------Шапка----------------
+.header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--border-color-head);
+}
+
+//------------------Лого----------------
+.logo {
+    color: $primary-text-color;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    &:focus {
+        background-color: $focus-back-color;
+    }
+
+    &__web {
+        color: $logo-color;
+    }
+}
+
+//------------------Навігація----------------
+.navigation {
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    &__list {
+        width: calc((100% - 100px)/3);
+        margin-right: 50px;
+    }
+
+    &__link {
+        color: $primary-text-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+        padding: 32px 0;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $accent-color;
+        transition: color 250ms $cubic-beziez;
+    }
+
+    &__link--current {
+        position: relative;
+        color: $accent-color;
+    }
+
+    &__link--current::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border-radius: 2px;
+        height: 4px;
+        background-color: var(--accent-color)
+    }
+}
+
+//------------------Контакти----------------
+.contact {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    &__list {
+        width: calc((100% - 50px)/2);
+        margin-left: 50px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        color: $second-text-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+        transition: color 250ms var(--cubic-beziez);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $accent-color;
+    }
+
+    &__icon-envelope,
+    &__icon-smartphone {
+        margin-right: 10px;
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
