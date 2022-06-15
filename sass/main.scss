@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./base/normalize";
 @import "./utils/reset";
+@import "./utils/visually-hidden";
 @import "./components/header";
 @import "./components/button";
 @import "./components/hero";
@@ -9,4 +10,5 @@
 @import "./components/services";
 @import "./components/our-team";
 @import "./components/client";
+@import "./components/portfolio-nav";
 @import "./components/footer";
