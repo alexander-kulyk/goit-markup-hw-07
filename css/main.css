@@ -926,6 +926,16 @@ ol li {
   letter-spacing: 0.03em;
 }
 
+.item-card p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .item-card__subtitle {
   margin-top: 0;
   margin-bottom: 16px;
