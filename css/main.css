@@ -326,10 +326,20 @@ ol li {
   padding: 0;
 }
 
+.header__container {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--border-color-head);
+  border-bottom-color: #ECECEC;
 }
 
 .logo {
@@ -358,6 +368,7 @@ ol li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 93px;
 }
 
 .navigation__list {
@@ -395,7 +406,7 @@ ol li {
   left: 0;
   border-radius: 2px;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: #2196F3;
 }
 
 .contact {

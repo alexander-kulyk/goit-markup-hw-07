@@ -1,8 +1,13 @@
 //------------------Шапка----------------
+.header__container{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
 .header {
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: var(--border-color-head);
+    border-bottom-color: $border-color-head;
 }
 
 //------------------Лого----------------
@@ -29,6 +34,7 @@
     height: 80px;
     display: flex;
     align-items: center;
+    margin-left: 93px;
 
     &__list {
         width: calc((100% - 100px)/3);
@@ -66,7 +72,7 @@
         left: 0;
         border-radius: 2px;
         height: 4px;
-        background-color: var(--accent-color)
+        background-color: $accent-color;
     }
 }
 
