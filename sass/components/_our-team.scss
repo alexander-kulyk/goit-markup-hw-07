@@ -51,15 +51,7 @@
             text-align: center;
             letter-spacing: 0.03em;
     }
-    &__social-list{
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 0;
-        
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
-    }
+    
     &__social{
         display: flex;
         justify-content: center;
@@ -68,7 +60,7 @@
         
         padding-left: 0;
     }
-    &__social:last-child {
+    &__social:not(:last-child){
         padding-right: 10px;
     }
 

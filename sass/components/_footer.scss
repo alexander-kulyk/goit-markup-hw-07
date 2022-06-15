@@ -4,7 +4,13 @@
     height: 252px;
     background-color: $footer-back-color;
 
-   &__logo{
+    &__contact{
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    &__logo{
     color: $logo-footer-color;
     
     font-family: 'Raleway', sans-serif;
@@ -18,11 +24,12 @@
     }
    }
 
-   &__web-logo{}
 
    &__contact-conten {
-    margin-left: 0;
 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -39,7 +46,6 @@
     margin-top: 0;
     margin-bottom: 0;
     color: $logo-footer-color;
-
    }
    &__contact-item{
     width: 100%;
@@ -65,21 +71,69 @@
 
 .social-footer{
 
-    &__icon-list{}
+    &_tittle{
+        color: $body-background-color;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
 
-    &__icon{}
+    &__icon-back{
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+    }
 
-    &__icon-link{}
+    &__svg{
+        fill: $body-background-color;
+    }
 
 
 
 }
 
 .subscribe{
+    margin-left: 93px;
 
-    &__form{}
+    &__form{
+        display: flex;
+        padding: 0;
+    }
 
-    &__input{}
+    &__input{
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        padding-left: 16px;
+        
+        background-color: $footer-back-color;
+        color: $body-background-color;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        
+        transition: border 250ms $cubic-beziez;
+        
+        &:focus{
+            border: 1px solid $accent-color;
+            outline: none;
+            cursor: pointer;
+        }
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
 
-    &__icon{}
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding-left: 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
