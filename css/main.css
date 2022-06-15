@@ -767,6 +767,17 @@ ol li {
   display: none;
 }
 
+.specifics h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .specifics__tittle-h3 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -776,6 +787,15 @@ ol li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.specifics p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .specifics__text {
@@ -797,16 +817,16 @@ ol li {
   list-style-type: none;
 }
 
-.specifics__list .specifics__item {
+.specifics__item {
   width: calc((100% - 90px)/4);
   margin-right: 30px;
 }
 
-.specifics__list .specifics__item:nth-child(4n) {
+.specifics__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.specifics__icon {
+.specific__icon {
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
