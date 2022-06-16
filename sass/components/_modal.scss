@@ -125,12 +125,15 @@
 }
 
 .form-comment {
-    &__lable {}
 
     &__textarea {
         padding-left: 16px;
         padding-top: 12px;
         outline: none;
+        resize: none;
+
+        border: 1px solid $border-color;
+        border-radius: 4px;
 
         transition: border 250ms $cubic-beziez;
     }
