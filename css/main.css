@@ -943,7 +943,8 @@ ol li {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.item-card__social {
+
+.social-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,10 +957,10 @@ ol li {
   list-style-type: none;
   padding-left: 0;
 }
-.item-card__social:not(:last-child) {
+.social-list__item:not(:last-child) {
   padding-right: 10px;
 }
-.item-card__social-link {
+.social-list__link {
   width: 44px;
   height: 44px;
   display: -webkit-box;
@@ -976,11 +977,11 @@ ol li {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.item-card__social-link:hover, .item-card__social-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: #2196F3;
   color: #ffffff;
 }
-.item-card__social-icon {
+.social-list__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1084,25 +1085,24 @@ ol li {
           justify-content: center;
 }
 
-.portfolio-projec__element {
+.projec-element {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   margin-left: 0;
   padding-right: 0;
 }
-.portfolio-projec__element:nth-child(3n) {
+.projec-element:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-projec__element:nth-last-child(-n+3) {
+.projec-element:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
-
-.portfolio-projec__link {
+.projec-element__link {
   display: block;
   text-decoration: none;
 }
-.portfolio-projec__link:hover {
+.projec-element__link:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1110,23 +1110,19 @@ ol li {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-projec__link:hover .portfolio-projec__image::before, .portfolio-projec__link:focus .portfolio-projec__image::before {
+.projec-element__link:hover .projec-element__image::before, .projec-element__link:focus .projec-element__image::before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-
-.portfolio-projec__link:hover .portfolio-projec__info, .portfolio-projec__link:focus .portfolio-projec__info {
+.projec-element__link:hover .projec-element__info, .projec-element__link:focus .projec-element__info {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-
-.portfolio-projec__image {
+.projec-element__image {
   position: relative;
   overflow: hidden;
 }
-
-.portfolio-projec__image::before {
+.projec-element__image::before {
   display: inline-block;
   content: "";
   position: absolute;
@@ -1141,8 +1137,7 @@ ol li {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-projec__info {
+.projec-element__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1165,7 +1160,7 @@ ol li {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-projec__info p {
+.projec-element__info p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1174,8 +1169,7 @@ ol li {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
-.portfolio-projec__border {
+.projec-element__border {
   width: 370px;
   padding: 20px 24px;
   border-right-width: 1px;
@@ -1188,8 +1182,7 @@ ol li {
   border-left-style: solid;
   border-left-color: #EEEEEE;
 }
-
-.portfolio-projec__tittle {
+.projec-element__tittle {
   margin-bottom: 4px;
   margin-top: 0;
   font-weight: 700;
@@ -1198,8 +1191,7 @@ ol li {
   letter-spacing: 0.06em;
   color: #212121;
 }
-
-.portfolio-projec__subtitle {
+.projec-element__subtitle {
   color: #757575;
   text-decoration: none;
   font-size: 16px;
