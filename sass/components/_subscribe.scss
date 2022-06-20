@@ -2,7 +2,7 @@
     margin-left: 93px;
 
     &__form{
-        display: flex;
+        @include flexCenter ($type:flex);
         padding: 0;
     }
 
@@ -31,9 +31,7 @@
     }
 
     &__icon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter ();
         
         padding-left: 10px;
         background-repeat: no-repeat;

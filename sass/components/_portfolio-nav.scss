@@ -5,9 +5,9 @@
         margin-top: 0;
         margin-bottom: 50px;
         
-        display: flex;
-        justify-content: center; 
+        @include flexCenter();
      }
+     
      &__nav-item{
         &:not(:last-child) {
             margin-right: 8px;

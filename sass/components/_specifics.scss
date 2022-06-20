@@ -46,10 +46,11 @@
 
     }
     &__list{
+        @include flexCenter ();
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 0;
-        display: flex;
+        // display: flex;
         list-style-type: none;
     }
     &__item {
@@ -75,8 +76,6 @@
     margin-bottom: 30px;
     background-color: $portfolio-button-color;
     border-radius: 4px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    @include  flexCenter ();
 }

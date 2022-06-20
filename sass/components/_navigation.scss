@@ -1,7 +1,8 @@
 .navigation {
+    @include flexCenter();
+    // display: flex;
+    // align-items: center;
     height: 80px;
-    display: flex;
-    align-items: center;
     margin-left: 93px;
 
     &__list {

@@ -8,8 +8,6 @@
     margin-bottom: 0;
     padding-left: 0;
     
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
+    @include flexCenter ();
 }
 

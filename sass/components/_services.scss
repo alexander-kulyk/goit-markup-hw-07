@@ -9,10 +9,9 @@
         margin-left: 0;
         padding-left: 0;
         
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
+        @include flexCenter ();
     }
+    
     &__item{
         width: calc((100% - 60px)/3);
         margin-right: 30px;
@@ -24,10 +23,8 @@
         position: relative;
     }
     &__text{
-        display: flex;
+        @include flexCenter ();
         position: absolute;
-        align-items: center;
-        justify-content: center;
         
         bottom: 0;
         left: 0;
