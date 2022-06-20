@@ -261,6 +261,24 @@ summary {
   display: list-item;
 }
 
+.portfolio, .client, .our-team, .services, .specifics {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.social-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -281,11 +299,6 @@ html {
   width: 1200px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .tittle-h2 {
   margin-top: 0;
   margin-bottom: 50px;
@@ -304,19 +317,6 @@ body {
   background-color: #ffffff;
   color: #212121;
   font-family: "Roboto", sans-serif;
-}
-
-.social-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 ul li,
@@ -760,7 +760,7 @@ ol li {
 }
 
 .specifics {
-  padding-top: 94px;
+  padding-bottom: 0;
 }
 .specifics h3 {
   margin-top: 0;

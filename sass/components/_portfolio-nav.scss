@@ -1,4 +1,5 @@
 .portfolio{ 
+    @extend %section;
 
     &__nav-list{
         margin-top: 0;

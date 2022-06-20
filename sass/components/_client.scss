@@ -1,4 +1,5 @@
 .client{
+    @extend %section;
 
     &__list{
         display: flex;
