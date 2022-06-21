@@ -5,6 +5,8 @@
         @include flexCenter ($main-axis:space-between);
         padding-right: 0;
         padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     &__logo{

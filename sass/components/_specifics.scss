@@ -46,12 +46,11 @@
 
     }
     &__list{
-        @include flexCenter ();
+        @include flexCenter ($cross-axis:flex-start);
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 0;
-        // display: flex;
-        list-style-type: none;
+
     }
     &__item {
         width: calc((100% - 90px)/4);
